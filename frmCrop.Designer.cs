@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCrop));
             this.pbCrop = new System.Windows.Forms.PictureBox();
             this.cmdCancel = new System.Windows.Forms.Button();
             this.cmdOK = new System.Windows.Forms.Button();
@@ -104,6 +105,7 @@
             this.Controls.Add(this.cmdOK);
             this.Controls.Add(this.cmdCancel);
             this.Controls.Add(this.pbCrop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCrop";
             this.Text = "frmCrop";
             this.Load += new System.EventHandler(this.frmCrop_Load);
