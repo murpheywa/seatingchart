@@ -1647,7 +1647,12 @@ namespace SeatingChart
             DeselectActiveText();
         }
 
-
-
-    }
+		private void mnuOpenProjectFolder_Click(object sender, EventArgs e)
+		{
+			Process p = new Process();
+			p.StartInfo.FileName = @"explorer.exe";
+			p.StartInfo.Arguments = @"file:\\\" + _sWorkspacePath;
+			p.Start();
+		}
+	}
 }
